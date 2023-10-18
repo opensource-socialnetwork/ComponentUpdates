@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component xmlns="http://www.opensource-socialnetwork.org/v/3.0">
+    <name>ComponentUpdates</name>
+    <id>ComponentUpdates</id>
+    <author>Core Team</author>
+    <author_url>https://github.com/lianglee/ComponentUpdates</author_url>
+    <description>Checks for updates to installed components from the OSSN site (only for free components)</description>
+    <license>GPLv3</license>
+    <license_url>https://www.gnu.org/licenses/gpl-3.0.en.html</license_url>
+    <version>6.9</version>
+	<requires>
+		<type>ossn_version</type>
+		<version>7.0</version>
+	</requires>
+</component>
