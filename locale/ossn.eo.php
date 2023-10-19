@@ -5,8 +5,8 @@
 **/
 
 ossn_register_languages('eo', array(
-	 'component:update:update:error' => 'Model not found.', 
-	 'component:update:update_available' => 'Model not found.', 
-	 'component:update:download' => 'Model not found.', 
-	 'component:update:removeserver:error' => 'Model not found.', 
+	 'component:update:update:error' => 'Eraro de Kontrolilo pri Gisdatigoj de Komponantoj', 
+	 'component:update:update_available' => 'Gisdatigo Disponebla', 
+	 'component:update:download' => 'Elsutu', 
+	 'component:update:removeserver:error' => 'Ne eblas sargi la datumojn de la fora servilo!', 
 ));
