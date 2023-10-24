@@ -4,10 +4,10 @@
     <id>ComponentUpdates</id>
     <author>Core Team</author>
     <author_url>https://github.com/lianglee/ComponentUpdates</author_url>
-    <description>Checks for updates to installed components from the OSSN site (only for free components)</description>
+    <description>Checks for updates to installed components from the OSSN site (Sources Ossn Community and Com Z-mans)</description>
     <license>GPLv3</license>
     <license_url>https://www.gnu.org/licenses/gpl-3.0.en.html</license_url>
-    <version>7.2</version>
+    <version>7.3</version>
 	<requires>
 		<type>ossn_version</type>
 		<version>7.0</version>
