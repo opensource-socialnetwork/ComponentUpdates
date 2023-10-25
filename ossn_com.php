@@ -13,10 +13,10 @@ ossn_register_callback('ossn', 'init', function () {
 		if(ossn_isAdminLoggedin()) {
 				ossn_extend_view('pages/administrator/contents/components', 'componentupdates/js');
 				ossn_extend_view('pages/administrator/contents/themes', 'componentupdates/js');
-				
-				ossn_register_page('component_updates_check', function(){
-							header('Content-Type: application/json; charset=utf-8');	
-							echo json_encode(com_updates_api_all());
+
+				ossn_register_page('component_updates_check', function () {
+						header('Content-Type: application/json; charset=utf-8');
+						echo json_encode(com_updates_api_all());
 				});
 		}
 });
