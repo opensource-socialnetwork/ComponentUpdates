@@ -13,10 +13,10 @@ ossn_register_callback('ossn', 'init', function () {
 		if(ossn_isAdminLoggedin()) {
 				ossn_extend_view('pages/administrator/contents/components', 'componentupdates/js');
 				ossn_extend_view('pages/administrator/contents/themes', 'componentupdates/js');
-
-				ossn_register_page('component_updates_check', function () {
-						header('Content-Type: application/json; charset=utf-8');
-						echo json_encode(com_updates_api_all());
+				
+				ossn_register_page('component_updates_check', function(){
+							header('Content-Type: application/json; charset=utf-8');	
+							echo json_encode(com_updates_api_all());
 				});
 		}
 });
@@ -37,8 +37,7 @@ function com_updates_api_all() {
 		$curl     = curl_multi_init();
 
 		for($i = 0; $i < $sources_count; $i++) {
-				$url          = $nodes[$i];
-				$requests[$i] = curl_init($url);
+				$requests[$i] = curl_init($sources[$i]['endpoint']);
 				curl_setopt($requests[$i], CURLOPT_HEADER, false);
 				curl_setopt($requests[$i], CURLOPT_RETURNTRANSFER, true);
 				curl_setopt($requests[$i], CURLOPT_URL, $sources[$i]['endpoint']);
