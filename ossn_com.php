@@ -30,6 +30,10 @@ function com_updates_api_all() {
 						'name'     => 'Comz Za-mans',
 						'endpoint' => 'https://comz.z-mans.net/groups/api/comz_updates',
 				),
+				array(
+						'name'     => 'OpenTeknik',
+						'endpoint' => 'https://www.openteknik.com/api/v1.0/components_store_updates',
+				),				
 		);
 		$sources_count = count($sources);
 
