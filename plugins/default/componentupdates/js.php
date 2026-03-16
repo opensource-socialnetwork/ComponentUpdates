@@ -113,10 +113,13 @@ $(document).ready(function () {
 						local_com_version = $item.attr('data-com-version');
 						//check if remote version is larger then local then show update
 						if (com_update_version_compare(com_version, local_com_version, ">") === true) {
-							$item.find('.card-header').addClass('bg-warning');
-							template_download = '<tr class="bg-warning"><th scope="row">' + Ossn.Print('component:update:update_available') + '</th><td><span>' + com_version + '</span> <a href="' + this.url + '" target="_blank" class="badge bg-success text-white">' + Ossn.Print('component:update:download') + '</a></td></tr>';
-
-							$item.find('.card-body > table > tbody').prepend(template_download);
+							$item.find('.ossn-com-row').addClass('bg-warning');
+							$item.find('.com-row-details').css({'background': '#fff'});
+							
+						template_download = '<div class="meta-tile">' +
+                        '<label>' + Ossn.Print('component:update:update_available') + '</label>' +
+                        '<a class="badge bg-warning" href="' + this.url + '" target="_blank">' + com_version + ' - ' + Ossn.Print('component:update:download') + '</a>' +'</div>';
+							$item.find('.com-meta-tiles').prepend(template_download);
 						}
 
 					}
